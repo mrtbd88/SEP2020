@@ -3,15 +3,6 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testLogIn.LogInWithValidCredential">
-        <methods>
-          <include name="tearDown"/>
-          <include name="beforeEachTestMethod"/>
-          <include name="afterEachTestMethod"/>
-          <include name="startTestSuite"/>
-          <include name="logInWithValidCredential"/>
-        </methods>
-      </class> <!-- testLogIn.LogInWithValidCredential -->
       <class name="testLogIn.TestListYourProperty">
         <methods>
           <include name="ListYourProperty"/>
