@@ -19,7 +19,6 @@ public class WebDriverFunctions {
 	}
 	
 	// --------------------- EDIT BOX / TYPE -----------------------
-	//https://www.expedia.com/
 	public void typeByXpath(String loc, String val){
 		driver.findElement(By.xpath(loc)).clear();
 		driver.findElement(By.xpath(loc)).sendKeys(val);
@@ -56,8 +55,7 @@ public class WebDriverFunctions {
 	
 	public void assertEqualByXpath (String loc, String expValue){
 		String act = driver.findElement(By.xpath(loc)).getText(); 
-		// act is coming from Domain -- the one developer build and release
-		String exp = expValue; // exp is coming from Requirement or Mock-up
+		String exp = expValue;
 		Assert.assertEquals(act, exp);
 	}
 }

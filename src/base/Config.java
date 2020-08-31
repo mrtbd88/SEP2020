@@ -14,19 +14,7 @@ public class Config extends WebDriverFunctions {
 	public void startTestSuite(){
 		getCurrentTime();
 	}
-
-//	@Parameters("browser")
-//	@BeforeMethod
-//	public void beforeEachTestMethod(String browser){
-//		if (browser.equalsIgnoreCase("ch")){
-//			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/drivers/chromedriver.exe");
-//			driver = new ChromeDriver(); 
-//			System.out.println (" chrome driver open ++++++++++++++++ ");
-//		} else if (browser.equalsIgnoreCase("ff")){
-//			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/drivers/geckodriver.exe");
-//			driver = new FirefoxDriver(); 
-//			System.out.println (" Firefox driver open ++++++++++++++++ ");
-	
+							
 	@BeforeMethod
 	public void beforeEachTestMethod(){
 		
@@ -38,8 +26,9 @@ public class Config extends WebDriverFunctions {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
 		// open browser	
-		driver.get("http://www.booking.com");
+		driver.get("https://www.expedia.com/");
 	}
+	
 
 	@AfterMethod
 	public void afterEachTestMethod(){
