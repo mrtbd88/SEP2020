@@ -26,7 +26,7 @@ public class Config extends WebDriverFunctions {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
 		// open browser	
-		driver.get("https://www.expedia.com/");
+		driver.get("https://www.coachusa.com/");
 	}
 	
 

@@ -3,19 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
   <test name="Test(failed)" parallel="none">
     <classes>
+      <class name="base.Config">
+        <methods>
+          <include name="tearDown"/>
+          <include name="startTestSuite"/>
+        </methods>
+      </class> <!-- base.Config -->
       <class name="testLogIn.TestListYourProperty">
         <methods>
           <include name="ListYourProperty"/>
-        </methods>
-      </class> <!-- testLogIn.TestListYourProperty -->
-      <class name="testLogIn.LogInWithValidCredential">
-        <methods>
           <include name="beforeEachTestMethod"/>
           <include name="afterEachTestMethod"/>
-          <include name="startTestSuite"/>
-          <include name="logInWithValidCredential"/>
         </methods>
-      </class> <!-- testLogIn.LogInWithValidCredential -->
+      </class> <!-- testLogIn.TestListYourProperty -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
