@@ -1,33 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-09-05T18:48:10 EDT" name="Default suite" finished-at="2020-09-05T18:48:23 EDT" duration-ms="13225">
+  <suite name="Suite" duration-ms="27019" started-at="2020-09-05T22:49:30Z" finished-at="2020-09-05T22:49:57Z">
     <groups>
     </groups>
-    <test started-at="2020-09-05T18:48:10 EDT" name="Default test" finished-at="2020-09-05T18:48:23 EDT" duration-ms="13225">
+    <test name="Test" duration-ms="27019" started-at="2020-09-05T22:49:30Z" finished-at="2020-09-05T22:49:57Z">
       <class name="testLogIn.LogInWithValidCredential">
-        <test-method is-config="true" signature="startTestSuite()[pri:0, instance:testLogIn.LogInWithValidCredential@184cf7cf]" started-at="2020-09-05T18:48:10 EDT" name="startTestSuite" finished-at="2020-09-05T18:48:10 EDT" duration-ms="38" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTestSuite -->
-        <test-method is-config="true" signature="beforeEachTestMethod()[pri:0, instance:testLogIn.LogInWithValidCredential@184cf7cf]" started-at="2020-09-05T18:48:10 EDT" name="beforeEachTestMethod" finished-at="2020-09-05T18:48:18 EDT" duration-ms="8240" status="PASS">
+        <test-method status="PASS" signature="beforeEachTestMethod()[pri:0, instance:testLogIn.LogInWithValidCredential@3ffcd140]" name="beforeEachTestMethod" is-config="true" duration-ms="7631" started-at="2020-09-05T18:49:30Z" finished-at="2020-09-05T18:49:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEachTestMethod -->
-        <test-method signature="logInWithValidCredential()[pri:0, instance:testLogIn.LogInWithValidCredential@184cf7cf]" started-at="2020-09-05T18:48:18 EDT" name="logInWithValidCredential" finished-at="2020-09-05T18:48:19 EDT" duration-ms="638" status="PASS">
+        <test-method status="PASS" signature="logInWithValidCredential()[pri:0, instance:testLogIn.LogInWithValidCredential@3ffcd140]" name="logInWithValidCredential" duration-ms="578" started-at="2020-09-05T18:49:37Z" finished-at="2020-09-05T18:49:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logInWithValidCredential -->
-        <test-method is-config="true" signature="afterEachTestMethod()[pri:0, instance:testLogIn.LogInWithValidCredential@184cf7cf]" started-at="2020-09-05T18:48:19 EDT" name="afterEachTestMethod" finished-at="2020-09-05T18:48:23 EDT" duration-ms="4321" status="PASS">
+        <test-method status="PASS" signature="afterEachTestMethod()[pri:0, instance:testLogIn.LogInWithValidCredential@3ffcd140]" name="afterEachTestMethod" is-config="true" duration-ms="4318" started-at="2020-09-05T18:49:38Z" finished-at="2020-09-05T18:49:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTestMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testLogIn.LogInWithValidCredential@184cf7cf]" started-at="2020-09-05T18:48:23 EDT" name="tearDown" finished-at="2020-09-05T18:48:24 EDT" duration-ms="535" status="PASS">
+      </class> <!-- testLogIn.LogInWithValidCredential -->
+      <class name="base.Config">
+        <test-method status="PASS" signature="startTestSuite()[pri:0, instance:base.Config@3e77a1ed]" name="startTestSuite" is-config="true" duration-ms="29" started-at="2020-09-05T18:49:30Z" finished-at="2020-09-05T18:49:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestSuite -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:base.Config@3e77a1ed]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-09-05T18:49:57Z" finished-at="2020-09-05T18:49:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testLogIn.LogInWithValidCredential -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- base.Config -->
+      <class name="testLogIn.TestSanitizedBuses">
+        <test-method status="PASS" signature="beforeEachTestMethod()[pri:0, instance:testLogIn.TestSanitizedBuses@23bb8443]" name="beforeEachTestMethod" is-config="true" duration-ms="9046" started-at="2020-09-05T18:49:42Z" finished-at="2020-09-05T18:49:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTestMethod -->
+        <test-method status="PASS" signature="ListYourProperty()[pri:0, instance:testLogIn.TestSanitizedBuses@23bb8443]" name="ListYourProperty" duration-ms="1117" started-at="2020-09-05T18:49:51Z" finished-at="2020-09-05T18:49:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ListYourProperty -->
+        <test-method status="PASS" signature="afterEachTestMethod()[pri:0, instance:testLogIn.TestSanitizedBuses@23bb8443]" name="afterEachTestMethod" is-config="true" duration-ms="4320" started-at="2020-09-05T18:49:52Z" finished-at="2020-09-05T18:49:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+      </class> <!-- testLogIn.TestSanitizedBuses -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
