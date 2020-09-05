@@ -2,6 +2,8 @@ package base;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -22,8 +24,8 @@ public class Config extends WebDriverFunctions {
 	//System.setProperty("webdriver.chrome.driver", "C:\\Users\\Mahfuj Tuhin\\eclipse-workspace\\NN07\\drivers\\chromedriver.exe");
 		
 		driver = new ChromeDriver();
-		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
 		// open browser	
 		driver.get("https://www.coachusa.com/");
@@ -33,13 +35,13 @@ public class Config extends WebDriverFunctions {
 	@AfterMethod
 	public void afterEachTestMethod(){
 		// close browser
-		driver.close();
+	    driver.close();
 		System.out.println (" Test is ended and browser is closeded +++++++ ");
 	}
 
 	@AfterSuite
 	public void tearDown(){
-		//driver.quit();
+		driver.quit();
 		System.out.println (" Terminated WD +++++++ ");
 	}
 

@@ -5,15 +5,15 @@ import org.testng.annotations.Test;
 import base.Config;
 import pageHelper.LocatorAndValue;
 
-public class LookingForScheduales extends Config{
+public class TestSanitizedBuses extends Config{
 
 	LocatorAndValue signIn = new LocatorAndValue();
 	
 	@Test
 	public void ListYourProperty(){
-		System.out.println ("Test Bus Routes");
-		// click on Bus Routes link from header
-		clickByXpath (signIn.busrouteslinkloc);
+		System.out.println ("Test Sanitized Buses");
+		// click on Sanitized Buses link from header
+		clickByXpath (signIn.sanitizedbuseslinkloc);
 		
 		//Input Origin
 		
