@@ -43,6 +43,10 @@ public class Config extends WebDriverFunctions {
 	public void tearDown(){
 //		driver.quit();
 		System.out.println (" Terminated WD +++++++ ");
+		
+		
+	
+				
 	}
 
 }
