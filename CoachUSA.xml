@@ -4,7 +4,8 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="base.Config"/>
-      <class name="testLogIn.TestListYourProperty"/>
+      <class name="testLogIn.LogInWithValidCredential"/>
+      <class name="testLogIn.TestSanitizedBuses"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

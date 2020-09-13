@@ -18,27 +18,22 @@ public class LogInWithValidCredential extends Config{
 		// click on sign in link from header
 		clickByXpath (signIn.signinlinkloc);
 		
-		//Click on again sign in link
-		clickByXpath (signIn.signinlinklocagain);
-		
 		//Input email address
 		typeByXpath (signIn.emailloc, signIn.emailval);
-		
-		// click continue button after entering the email
-		clickByXpath (signIn.continuebuttonloc);
+	
 		
 		//Input password
 		typeByXpath (signIn.passloc, signIn.passval);
 		
 		// click Sign In button after entering the password
-		clickByXpath (signIn.lastsigninbuttonloc);
+		clickByXpath (signIn.loginloc);
 		
 		
 		//Assert
-		String act = driver.findElement(By.xpath(signIn.myActualFullNameLoc)).getText(); 
-		String exp = "Mahfujur";
-		Assert.assertEquals(act, exp);
-		
+//		String act = driver.findElement(By.xpath(signIn.myActualIDLoc)).getText(); 
+//		String exp = "MRTBD88";
+//		Assert.assertEquals(act, exp);
+//		
 	
 		
 	}

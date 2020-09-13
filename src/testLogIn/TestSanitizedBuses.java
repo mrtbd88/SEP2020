@@ -5,16 +5,20 @@ import org.testng.annotations.Test;
 import base.Config;
 import pageHelper.LocatorAndValue;
 
-public class TestListYourProperty extends Config{
+public class TestSanitizedBuses extends Config{
 
 	LocatorAndValue signIn = new LocatorAndValue();
 	
 	@Test
 	public void ListYourProperty(){
-		System.out.println ("Test List Your Property of Expedia");
-		// click on sign in link from header
-		clickByXpath (signIn.listyourpropertyloc);
+		System.out.println ("Test Sanitized Buses");
+		// click on Sanitized Buses link from header
+		clickByXpath (signIn.sanitizedbuseslinkloc);
 		
+		//Input Origin
+		
+		
+
 		
 		
 		//Assert
