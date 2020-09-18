@@ -1,5 +1,6 @@
 package testLogIn;
 
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import base.Config;
@@ -9,7 +10,8 @@ public class TestSanitizedBuses extends Config{
 
 	LocatorAndValue signIn = new LocatorAndValue();
 	
-	@Test
+      @Ignore("working on it")
+      @Test
 	public void ListYourProperty(){
 		System.out.println ("Test Sanitized Buses");
 		// click on Sanitized Buses link from header
