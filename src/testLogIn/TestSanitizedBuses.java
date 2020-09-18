@@ -10,7 +10,7 @@ public class TestSanitizedBuses extends Config{
 
 	LocatorAndValue signIn = new LocatorAndValue();
 	
-      @Ignore("working on it")
+//      @Ignore("working on it")
       @Test
 	public void ListYourProperty(){
 		System.out.println ("Test Sanitized Buses");
