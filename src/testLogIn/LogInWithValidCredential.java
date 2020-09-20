@@ -12,7 +12,7 @@ public class LogInWithValidCredential extends Config{
 
 	LocatorAndValue signIn = new LocatorAndValue();
 	
-	@Test
+	@Test(priority=1)
 	public void logInWithValidCredential(){
 		System.out.println ("login With Valid Credential");
 		// click on sign in link from header
