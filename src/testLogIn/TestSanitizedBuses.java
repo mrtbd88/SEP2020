@@ -1,6 +1,5 @@
 package testLogIn;
 
-import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import base.Config;
@@ -10,14 +9,33 @@ public class TestSanitizedBuses extends Config{
 
 	LocatorAndValue signIn = new LocatorAndValue();
 	
-      @Ignore("working on it")
-      @Test
+	
+	
+      @Test(priority=2)
 	public void ListYourProperty(){
 		System.out.println ("Test Sanitized Buses");
 		// click on Sanitized Buses link from header
 		clickByXpath (signIn.sanitizedbuseslinkloc);
 		
-		//Input Origin
+      }
+//      @Ignore("working on it")
+      @Test(priority=3)
+      public void SightSeeing(){
+  		System.out.println ("Test Sight Seeing");
+  		
+      }
+      
+      @Test(priority=4,enabled = true)
+      public void Tours(){
+    		System.out.println ("Test Tours link");
+    		
+      }
+      @Test(priority=5,enabled = false)
+      public void Charters(){
+    		System.out.println ("Test Tours link");
+    	
+  		
+      
 		
 		
 
