@@ -1,6 +1,5 @@
 package testLogIn;
 
-import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import base.Config;
@@ -19,7 +18,7 @@ public class TestSanitizedBuses extends Config{
 		clickByXpath (signIn.sanitizedbuseslinkloc);
 		
       }
-      @Ignore("working on it")
+//      @Ignore("working on it")
       @Test(priority=3)
       public void SightSeeing(){
   		System.out.println ("Test Sight Seeing");
