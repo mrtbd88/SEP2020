@@ -19,12 +19,6 @@ public class TestSanitizedBuses extends Config{
 		
       }
 //      @Ignore("working on it")
-      @Test(priority=3)
-      public void SightSeeing(){
-  		System.out.println ("Test Sight Seeing");
-  		
-      }
-      
       @Test(priority=4,enabled = true)
       public void Tours(){
     		System.out.println ("Test Tours link");

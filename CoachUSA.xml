@@ -6,6 +6,7 @@
       <class name="base.Config"/>
       <class name="testLogIn.LogInWithValidCredential"/>
       <class name="testLogIn.TestSanitizedBuses"/>
+      <class name="testLogIn.SightSeeing"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
