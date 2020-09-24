@@ -29,11 +29,13 @@ public class LogInWithValidCredential extends Config{
 		clickByXpath (signIn.loginloc);
 		
 		
-		//Assert
-//		String act = driver.findElement(By.xpath(signIn.myActualIDLoc)).getText(); 
-//		String exp = "MRTBD88";
-//		Assert.assertEquals(act, exp);
-//		
+		// Assert 
+		String act = driver.findElement(By.xpath(signIn.myActualIDLoc)).getText(); 
+		// act is coming from Domain -- the one developer build and release
+		// coding needed -- genius level 1
+		String exp = "CONTRACT SERVICES"; // exp is coming from Requirement or Mock-up
+		Assert.assertEquals(act, exp);
+
 	
 		
 	}
