@@ -41,7 +41,7 @@ public class Config extends WebDriverFunctions {
 
 	@AfterSuite
 	public void tearDown(){
-//		driver.quit();
+		driver.quit();
 		System.out.println (" Terminated WD +++++++ ");
 		
 		
